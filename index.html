@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aula JavaScript</title>
+    <script src="JS/aula_js.js" type="text/javascript"></script>
+</head>
+
+<body onload="carregar()">
+    
+    <button onclick="clicar()">Clique aqui</button>
+    <div id="obrigado" onclick="redirecionar()"></div>
+    <div id="passeMouse" onmouseover="passeMouse(this)" onmouseout="retireMouse(this)">Passe o mouse aqui</div>
+    <div id="passeMouse2" onmouseover="passeMouse(this)" onmouseout="retireMouse(this)">Passe o mouse aqui</div>
+
+    <select name="estado" id="estado" onchange="pegarValor(this)">
+        <option value="São Paulo">SP</option>
+        <option value="Rio de Janeiro">RJ</option>
+        <option value="Minas Gerais">MG</option>
+    </select>
+</body>
+</html>
